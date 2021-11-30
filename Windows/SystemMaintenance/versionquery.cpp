@@ -200,7 +200,6 @@ void VersionQuery::versionShow()
             item2->setTextAlignment(Qt::AlignCenter);
             item2->setFlags(Qt::NoItemFlags);
             item2->setText(tr("RifaUWM_UI_201028R13"));
-
             ui->tableWidget->setItem(i,0,item1);
             ui->tableWidget->setItem(i,1,item2);
         }
