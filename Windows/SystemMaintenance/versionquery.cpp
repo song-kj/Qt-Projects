@@ -1,4 +1,4 @@
-#include "versionquery.h"
+﻿#include "versionquery.h"
 #include "ui_versionquery.h"
 #include <QListView>
 #include "myheader.h"
@@ -199,7 +199,7 @@ void VersionQuery::versionShow()
             QTableWidgetItem *item2=new QTableWidgetItem;
             item2->setTextAlignment(Qt::AlignCenter);
             item2->setFlags(Qt::NoItemFlags);
-            item2->setText(tr("RifaUWM_UI_201028T12"));
+            item2->setText(tr("RifaUWM_UI_201028R13"));
 
             ui->tableWidget->setItem(i,0,item1);
             ui->tableWidget->setItem(i,1,item2);
