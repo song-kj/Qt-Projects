@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SystemLog</class>
+ <widget class="QDialog" name="SystemLog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SystemLog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(201, 202, 202);</string>
+  </property>
+  <widget class="QPushButton" name="back_Mot_pb">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>380</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10;
+background-color: rgb(100, 100, 100);
+font-size:20px;
+color:rgb(255, 255, 0);
+}
+QPushButton::checked{
+color:red;
+/*background-color:rgb(0, 122, 204);*/
+}</string>
+   </property>
+   <property name="text">
+    <string>返
+回</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>10</y>
+     <width>721</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sans Serif</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>1</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="columnCount">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_Mot_pb_2">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>280</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10;
+background-color: rgb(100, 100, 100);
+font-size:20px;
+color:rgb(255, 255, 0);
+}
+QPushButton::checked{
+color:red;
+/*background-color:rgb(0, 122, 204);*/
+}</string>
+   </property>
+   <property name="text">
+    <string>报
+警
+日
+志</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_copy">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>180</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10;
+background-color: rgb(100, 100, 100);
+font-size:20px;
+color:rgb(255, 255, 0);
+}
+QPushButton::checked{
+color:red;
+/*background-color:rgb(0, 122, 204);*/
+}</string>
+   </property>
+   <property name="text">
+    <string>拷
+出
+日
+志</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

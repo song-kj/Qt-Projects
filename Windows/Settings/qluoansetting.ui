@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QLuoAnSetting</class>
+ <widget class="QDialog" name="QLuoAnSetting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Sans Serif&quot;;
+color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>裸氨设置</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>681</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="autoScroll">
+    <bool>false</bool>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_btn">
+   <property name="geometry">
+    <rect>
+     <x>753</x>
+     <y>290</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>保
+存</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="return_btn">
+   <property name="geometry">
+    <rect>
+     <x>753</x>
+     <y>385</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>返
+回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="download_btn">
+   <property name="geometry">
+    <rect>
+     <x>753</x>
+     <y>195</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>下
+载</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setall_btn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+}
+QPushButton::checked{
+color:red;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>全
+设</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="jia1_btn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>+
++</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="jian1_btn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>195</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>-
+-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="jia10_btn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>290</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>+
+10</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="jian10_btn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>385</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>-
+10</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setrow_btn">
+   <property name="geometry">
+    <rect>
+     <x>752</x>
+     <y>100</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+}
+QPushButton::checked{
+color:red;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>设
+行</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setcol_btn">
+   <property name="geometry">
+    <rect>
+     <x>752</x>
+     <y>5</y>
+     <width>48</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+}
+QPushButton::checked{
+color:red;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>设
+列</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tips">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>440</y>
+     <width>391</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:red;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>label_tips</zorder>
+  <zorder>label</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>save_btn</zorder>
+  <zorder>return_btn</zorder>
+  <zorder>download_btn</zorder>
+  <zorder>setall_btn</zorder>
+  <zorder>jia1_btn</zorder>
+  <zorder>jian1_btn</zorder>
+  <zorder>jia10_btn</zorder>
+  <zorder>jian10_btn</zorder>
+  <zorder>setrow_btn</zorder>
+  <zorder>setcol_btn</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

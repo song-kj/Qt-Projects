@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileOperations</class>
+ <widget class="QWidget" name="FileOperations">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(27, 150, 208);
+}
+QPushButton{
+border-radius:10;
+background-color: rgb(80, 80, 80);
+font-size:18px;
+color:rgb(255, 255, 0);
+}
+QPushButton::pressed{
+background-color: rgb(120, 120, 120);
+}
+QPushButton::checked{
+color:red;
+}
+QLabel{
+background-color:transparent;
+}</string>
+  </property>
+  <widget class="QPushButton" name="copytodisk_File_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>195</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>拷
+入
+硬
+盘</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="copytoUSB_File__pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>拷
+出
+U
+盘</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="patterndownload_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>290</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>花
+型
+下
+载</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="filedelete_File_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>385</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>文
+件
+删
+除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="flush_file_pb">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>100</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>刷
+新</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_pb">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>290</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返
+回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>195</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>显
+示</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>385</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>弹
+出
+U
+盘</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>430</y>
+     <width>671</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar
+{
+border:1px solid white;
+background-color:white;
+color:black;
+}
+QProgressBar::chunk
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.983146, y2:1, stop:0 rgba(61, 156, 245, 255), stop:1 rgba(66, 136, 232, 255));
+}</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tips">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>425</y>
+     <width>661</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:24px;
+color:red;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string>tips</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>40</y>
+     <width>331</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
+   <widget class="QPushButton" name="USBdevice_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font-size:24px;
+background-color: white;
+border-radius:0px;
+color:black;
+border:1px solid gray;
+}
+QPushButton::checked{
+color:red;
+}</string>
+    </property>
+    <property name="text">
+     <string>USB设备</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="USBdevice_twd">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>331</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>1</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white;
+border:1px solid gray;</string>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="columnCount">
+     <number>0</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>40</y>
+     <width>331</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
+   <widget class="QPushButton" name="diskdevice_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font-size:24px;
+background-color: white;
+border-radius:0px;
+color:black;
+border:1px solid gray;
+}
+QPushButton::checked{
+color:red;
+}</string>
+    </property>
+    <property name="text">
+     <string>系统硬盘</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="diskdevide_twd">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>331</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>2</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white;
+border:1px solid gray;</string>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="columnCount">
+     <number>0</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BtsrSetID</class>
+ <widget class="QDialog" name="BtsrSetID">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(41, 188, 204);
+}
+QToolButton{
+background-color:transparent;
+color:white;
+font-size:24px;
+border:1px solid white;
+}
+QLabel{
+color:white;
+font-size:28px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="return_btn">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>385</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:22px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>返
+回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>200</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>感应器数：</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_setnum">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>200</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_setid">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>195</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:18px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>开
+始
+编
+号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>70</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置感应器个数开始编号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>270</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:yellow;</string>
+   </property>
+   <property name="text">
+    <string>提示：编号完成</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_setid_stop">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>290</y>
+     <width>55</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10;background-color: rgb(100, 100, 100);font-size:18px;color:rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>停
+止
+编
+号</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_start">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>140</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>起始编号：</string>
+   </property>
+  </widget>
+  <zorder>return_btn</zorder>
+  <zorder>label</zorder>
+  <zorder>pushButton_setid</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>pushButton_setid_stop</zorder>
+  <zorder>label_4</zorder>
+  <zorder>toolButton_setnum</zorder>
+  <zorder>toolButton_start</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

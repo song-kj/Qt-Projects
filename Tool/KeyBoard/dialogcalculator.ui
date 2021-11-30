@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogCalculator</class>
+ <widget class="QDialog" name="DialogCalculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>283</width>
+    <height>402</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+border:1px solid white;
+}
+QToolButton{
+	font-size: 26px;
+	color: rgb(22, 22, 22);	
+	background-color: rgb(251, 251, 251);
+border-style:outside;
+border:1px solid #a0a0a0;
+}
+QToolButton::pressed{
+background-color: rgb(198, 198, 198);
+}
+QToolButton::checked{
+background-color: rgb(0, 157, 213);
+}
+QToolButton::disabled{
+background-color: rgb(127, 127, 127);
+}
+
+
+</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>283</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+background-color: rgb(234, 234, 234);;
+font: 28px &quot;Segoe UI&quot;;
+color: rgb(22, 22, 22);
+border:1px solid white;
+}</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num7">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>80</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num8">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>80</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num9">
+   <property name="geometry">
+    <rect>
+     <x>141</x>
+     <y>80</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>9</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Back">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>160</y>
+     <width>71</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>返
+
+回</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num4">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>160</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num5">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>160</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num6">
+   <property name="geometry">
+    <rect>
+     <x>141</x>
+     <y>160</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num3">
+   <property name="geometry">
+    <rect>
+     <x>141</x>
+     <y>240</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num1">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>240</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num2">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>240</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Sure">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>280</y>
+     <width>71</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>确
+
+定</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Num0">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>320</y>
+     <width>141</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_Backspace">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>80</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>&lt;</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_fuhao">
+   <property name="geometry">
+    <rect>
+     <x>141</x>
+     <y>320</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>+/-</string>
+   </property>
+  </widget>
+  <zorder>lineEdit</zorder>
+  <zorder>btn_Num7</zorder>
+  <zorder>btn_Num8</zorder>
+  <zorder>btn_Num9</zorder>
+  <zorder>btn_Num4</zorder>
+  <zorder>btn_Num5</zorder>
+  <zorder>btn_Num6</zorder>
+  <zorder>btn_Num3</zorder>
+  <zorder>btn_Num1</zorder>
+  <zorder>btn_Num2</zorder>
+  <zorder>btn_Sure</zorder>
+  <zorder>btn_Num0</zorder>
+  <zorder>btn_Backspace</zorder>
+  <zorder>btn_Back</zorder>
+  <zorder>btn_fuhao</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PatternWoven</class>
+ <widget class="QMainWindow" name="PatternWoven">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PatternWoven</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(27, 150, 208);
+}
+QPushButton::disabled{
+background-color:rgb(180,180,180);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>5</y>
+      <width>800</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(27, 150, 208);
+color:yellow;
+font-size:28px;</string>
+    </property>
+    <property name="text">
+     <string>编织主界面</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>681</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background-color: rgb(187, 227, 249);
+border-radius:5;
+}
+QLabel{
+color:black;
+font-size:22px;
+background-color:transparent;
+}
+QPushButton{
+border:noborder;
+background-color:transparent;
+color:blue;
+font-size:22px;
+}</string>
+    </property>
+    <widget class="QPushButton" name="systemID_lb">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>0</y>
+       <width>101</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="machinetype_pb">
+     <property name="geometry">
+      <rect>
+       <x>339</x>
+       <y>0</y>
+       <width>81</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_pb">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>0</y>
+       <width>171</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:blue;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>81</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>文件：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>0</y>
+       <width>91</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>机型：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>111</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>机台编号：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>100</y>
+      <width>681</width>
+      <height>155</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background-color: rgb(187, 227, 249);
+border-radius:5;
+}
+QLabel{
+color:black;
+font-size:22px;
+background-color:transparent;
+}
+QPushButton{
+border:noborder;
+background: transparent;
+font-size:20px;
+color:blue;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QLabel" name="label_13">
+       <property name="styleSheet">
+        <string notr="true">font-size:34px;</string>
+       </property>
+       <property name="text">
+        <string>步骤：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <widget class="QPushButton" name="step_lb">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>130</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:red;
+font-size:30px;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>针数：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="needle_lb">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="QLabel" name="label_19">
+       <property name="styleSheet">
+        <string notr="true">font-size:30px;</string>
+       </property>
+       <property name="text">
+        <string> 产  量：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5" rowspan="2">
+      <widget class="QPushButton" name="output_lb">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>145</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>145</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:red;
+font-size:24px;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>角度：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="anglelb">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" rowspan="2">
+      <widget class="QLabel" name="label_14">
+       <property name="styleSheet">
+        <string notr="true">font-size:34px;</string>
+       </property>
+       <property name="text">
+        <string>循环：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" rowspan="2">
+      <widget class="QPushButton" name="circulation_lb">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>130</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:red;
+font-size:30px;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>圈数：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="roll_lb">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>单件时间：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QPushButton" name="singletime_lb">
+       <property name="maximumSize">
+        <size>
+         <width>145</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>速度：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="speed_lb">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLabel" name="label_21">
+       <property name="text">
+        <string>零位基准：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QPushButton" name="debugswitch_lb">
+       <property name="maximumSize">
+        <size>
+         <width>145</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>261</y>
+      <width>681</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background-color: rgb(187, 227, 249);
+border-radius:5;
+}
+QLabel{
+color:black;
+font-size:18px;
+background-color:transparent;
+}
+QPushButton{
+color:blue;
+border:noborder;
+font-size:20px;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="topMargin">
+      <number>3</number>
+     </property>
+     <property name="bottomMargin">
+      <number>6</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>马达</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>压针</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pressneedle_1_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pressneedle_2_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pressneedle_3_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="pressneedle_4_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QPushButton" name="pressneedle_5_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="QPushButton" name="pressneedle_6_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="QPushButton" name="pressneedle_7_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="8">
+      <widget class="QPushButton" name="pressneedle_8_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>微调</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="finetuning_1_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="finetuning_2_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="finetuning_3_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QPushButton" name="finetuning_4_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QPushButton" name="finetuning_5_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QPushButton" name="finetuning_6_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="QPushButton" name="finetuning_7_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="8">
+      <widget class="QPushButton" name="finetuning_8_le">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>355</y>
+      <width>681</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background-color: rgb(187, 227, 249);
+border-radius:5;
+}</string>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>671</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser{
+background-color:white;
+color:black;
+font-size:18px;
+border-radius:5px;
+}
+QScrollBar{background:white;width: 28px;margin: 28px 0 28px 0;}
+                                   QScrollBar::handle{background:#a0a0a0; border:2px solid transparent; border-radius:0px;}
+                                   QScrollBar::handle:hover{background:gray;}
+                                   QScrollBar::handle:vertical{min-height:28px;}
+                                   QScrollBar::sub-line{background:#ffffff;image: url(:/img/top-line.png);height:28px;subcontrol-position: top;subcontrol-origin: margin;}
+                                   QScrollBar::sub-line:hover{image: url(:/img/top-line-hover.png);}
+                                   QScrollBar::sub-line:pressed{image: url(:/img/top-line-pressed.png);}
+                                   QScrollBar::add-line{background:#ffffff;image: url(:/img/bottom-line.png);height:28px;subcontrol-position: bottom;subcontrol-origin: margin;}
+                                   QScrollBar::add-line:hover{image: url(:/img/bottom-line-hover.png);}
+                                   QScrollBar::add-line:pressed{image: url(:/img/bottom-line-pressed.png);}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:18px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="reset_Pat_pb">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>5</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>复
+位</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopchain_Pat_lb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停
+链</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="economy_Pat_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>195</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>节
+约</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="singlestop_Pat_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>单
+停</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="F4stop_Pat_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>385</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>F4
+停</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ratelimit_Pat_pb">
+    <property name="geometry">
+     <rect>
+      <x>745</x>
+      <y>5</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>限
+速</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fastforward_Pat_pb">
+    <property name="geometry">
+     <rect>
+      <x>745</x>
+      <y>100</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>快
+进</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="blowfabric_Pat_pb">
+    <property name="geometry">
+     <rect>
+      <x>745</x>
+      <y>195</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>吹
+织</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="alarm_Pat_pb">
+    <property name="geometry">
+     <rect>
+      <x>745</x>
+      <y>290</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>报
+警</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="liftshuttle_Pat_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>385</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>抬
+纱
+嘴</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PatternWoven_pb">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>转
+速
+设
+置</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="flatclothing_pb">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>调
+试
+平
+布</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circulation_pb">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>节
+约
+调
+整</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pressNeedle_pb">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>压
+针
+微
+调</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GoGo_pb">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>加
+油</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="inNeedle_pb">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>全
+埋
+针</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="outNeedle_pb">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>全
+出
+针</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="previousPage_pb">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>上
+一
+页</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Yield_pb">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>产
+量
+设
+置</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextPage_pb">
+    <property name="geometry">
+     <rect>
+      <x>745</x>
+      <y>385</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>下
+一
+页</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toMenu_pb">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>5</y>
+      <width>221</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bitstream Charter</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/img/logo.png);
+}
+QPushButton::disabled{
+background-color:transparent;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="luoan_pb">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>10</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>裸
+氨
+设
+置</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="luoanD_pb">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>80</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>裸
+氨
+使
+能</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_left" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>55</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(180,180, 180, 100);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_right" native="true">
+    <property name="geometry">
+     <rect>
+      <x>745</x>
+      <y>0</y>
+      <width>55</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(180,180, 180, 100);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BTSR_pb">
+    <property name="geometry">
+     <rect>
+      <x>745</x>
+      <y>290</y>
+      <width>55</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>电
+子
+眼</string>
+    </property>
+   </widget>
+   <widget class="TextTicker" name="label_warning">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>221</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font-size:22px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_icons" native="true">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>5</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_tempear">
+       <property name="minimumSize">
+        <size>
+         <width>71</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>71</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(243, 243, 243);
+font-size: 24px;
+background-color:transparent;</string>
+       </property>
+       <property name="text">
+        <string>88.88</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_temp">
+       <property name="minimumSize">
+        <size>
+         <width>21</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>21</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/img/temperature.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="diswarn">
+       <property name="minimumSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/img/diswarn.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="disnotouch">
+       <property name="minimumSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/img/notouch.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="wifiFlag_lb">
+       <property name="minimumSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/img/success_0.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>label_tempear</zorder>
+    <zorder>label_temp</zorder>
+    <zorder>diswarn</zorder>
+    <zorder>wifiFlag_lb</zorder>
+    <zorder>disnotouch</zorder>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>widget_2</zorder>
+   <zorder>widget_3</zorder>
+   <zorder>widget_4</zorder>
+   <zorder>reset_Pat_pb</zorder>
+   <zorder>stopchain_Pat_lb</zorder>
+   <zorder>economy_Pat_pb</zorder>
+   <zorder>singlestop_Pat_pb</zorder>
+   <zorder>F4stop_Pat_pb</zorder>
+   <zorder>ratelimit_Pat_pb</zorder>
+   <zorder>fastforward_Pat_pb</zorder>
+   <zorder>blowfabric_Pat_pb</zorder>
+   <zorder>alarm_Pat_pb</zorder>
+   <zorder>liftshuttle_Pat_pb</zorder>
+   <zorder>PatternWoven_pb</zorder>
+   <zorder>flatclothing_pb</zorder>
+   <zorder>circulation_pb</zorder>
+   <zorder>pressNeedle_pb</zorder>
+   <zorder>GoGo_pb</zorder>
+   <zorder>inNeedle_pb</zorder>
+   <zorder>outNeedle_pb</zorder>
+   <zorder>previousPage_pb</zorder>
+   <zorder>Yield_pb</zorder>
+   <zorder>nextPage_pb</zorder>
+   <zorder>toMenu_pb</zorder>
+   <zorder>luoan_pb</zorder>
+   <zorder>luoanD_pb</zorder>
+   <zorder>widget_left</zorder>
+   <zorder>BTSR_pb</zorder>
+   <zorder>widget_right</zorder>
+   <zorder>widget</zorder>
+   <zorder>label_warning</zorder>
+   <zorder>widget_icons</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TextTicker</class>
+   <extends>QLabel</extends>
+   <header location="global">textticker.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

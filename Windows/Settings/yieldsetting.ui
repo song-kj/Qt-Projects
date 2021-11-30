@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>YieldSetting</class>
+ <widget class="QWidget" name="YieldSetting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(27, 150, 208);
+font-size:24px;
+}
+QPushButton{
+border-radius:10;
+background-color: rgb(80, 80, 80);
+font-size:18px;
+color:rgb(255, 255, 0);
+}
+QPushButton::pressed{
+background-color: rgb(120, 120, 120);
+}
+QPushButton::checked{
+color:red;
+}
+QToolButton{
+color:white;
+font-size:28px;
+border:noborder;
+}
+QToolButton::checked{
+color:red;
+}</string>
+  </property>
+  <widget class="QPushButton" name="ensure_Yie_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确
+定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearoutput_Yie_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>195</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>产
+量
+清
+零</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_Yie_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>290</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返
+回</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>331</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox{
+border:1px solid green;
+font-size:20px;
+color:red}</string>
+   </property>
+   <property name="title">
+    <string>产量设置</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>总产量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>已完成产量</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="alloutput_lb">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>120</y>
+      <width>80</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>1</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="completedoutput_lb">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>50</y>
+      <width>80</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>2</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

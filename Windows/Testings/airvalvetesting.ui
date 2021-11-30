@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AirValveTesting</class>
+ <widget class="QWidget" name="AirValveTesting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(27, 150, 208);
+}
+QPushButton{
+border-radius:10;
+background-color: rgb(80, 80, 80);
+font-size:20px;
+color:rgb(255, 255, 0);
+}
+QPushButton::pressed{
+background-color: rgb(120, 120, 120);
+}
+QPushButton::checked{
+color:red;
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>571</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background-color: rgb(255, 255, 255);
+border-radius:0px;
+}
+QPushButton{
+border-width:0;
+border-style:outset;
+font-size:22px;
+color:black;
+text-align:left;
+}
+QPushButton::checked{
+color:red;
+}
+QToolButton{
+border:2px solid green;
+font:bold;
+font-size:18px;
+color:red;
+background-color: rgb(255, 255, 127)
+}
+QToolButton::checked{
+color:green;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="singlemanual_Val_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单
+路
+手
+动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="singleauto_Val_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单
+个
+自
+动</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="groupauto_Val_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>195</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>成
+组
+自
+动</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="wholeauto_Val_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>290</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>整
+体
+自
+动</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="shuttlegroup_Val_pb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>385</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>梭
+子
+组</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="speedup_Val_pb">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>5</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>加
+速</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="slowdown_Val_pb">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>100</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>减
+速</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="empty_1_pb">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>195</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="empty_2_pb">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>290</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_Val_pb">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>385</y>
+     <width>51</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返
+回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_45">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>445</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:yellow;
+font-size:24px;</string>
+   </property>
+   <property name="text">
+    <string>速度：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="speed_lb">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>445</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color:red;
+font-size:24px;
+}</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="info_pb">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>440</y>
+     <width>211</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-width:0;border-style:outset;background: transparent;font-size:18px;color:red;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>0</y>
+     <width>121</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: rgb(100, 100, 100);
+font-size:20px;
+color:white;
+border:1px soild gray;
+border-radius:0px;
+}
+QPushButton::checked{
+background-color: #a0a0a0;
+color:red;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
